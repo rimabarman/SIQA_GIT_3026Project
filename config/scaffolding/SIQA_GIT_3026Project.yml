@@ -20,12 +20,64 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: WmSalesforceProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
 services:
 - serviceName: project.siqa_git_3026.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDB
+  packages:
+  - name: SIQA_GIT_3026Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.siqa_git_3026.WmSalesforceProvider.com_softwareag_cloudstreams_salesforce_v53.connections:SoapAlias
+  packages:
+  - name: SIQA_GIT_3026Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.siqa_git_3026.integrations:Call_refData
+  packages:
+  - name: SIQA_GIT_3026Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.siqa_git_3026.referencedata:refData
   packages:
   - name: SIQA_GIT_3026Project
     version: "1.0"
@@ -61,3 +113,86 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2105
+configurationVariables:
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cr.preemptiveAuthEnabled
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.pr.userAgent
+  : Cloudstreams
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.pr.useExpectCont
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cr.username
+  : vidi@softwareag.com
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.pr.serverRedirectMax
+  : "5"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.pr.httpContentCharSet
+  : ISO-8859-1
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.rh.requestHeaderNames
+  : "Content-Type,SOAPAction"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.pr.followServerRedirects
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.pr.allowCircularRedirects
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.pr.protocolVersion
+  : HTTP/1.1
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cr.authSchemeType
+  : none
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cr.password
+  : "{AES}B8rhTK4DUD1aV3z5wRGTjYaZCTv0DPT1C4mON3qCnd12s1Sa+177lUMRR7zTUwxx"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.retryCount
+  : "3"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.connectTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.readTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.sessionExpiry
+  : "14"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.poolable
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.rh.requestHeaderValues
+  : "text/xml,login"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.pr.useChunking
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.cn.providerUrl
+  : https://d0o000001qr6keac-dev-ed.my.salesforce.com/services/Soap/u/53.0
+  ? cloudstreamsconnection.project..siqa_git_3026..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:SoapAlias.timeoutType
+  : fixed
