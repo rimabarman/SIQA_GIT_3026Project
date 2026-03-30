@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<services>
+    <cloudstreamsCollectionKeys serviceName="WmCloudStreams.SoapVS">
+        <servicesKeys>
+            <keyDetails collectionKey="project.siqa_git_3026.WmSalesforceProvider.com_softwareag_cloudstreams_salesforce_v53.operations.actions:TestSoap" connectorServiceName="project.siqa_git_3026.WmSalesforceProvider.com_softwareag_cloudstreams_salesforce_v53.operations.actions:TestSoap"/>
+        </servicesKeys>
+    </cloudstreamsCollectionKeys>
+</services>
