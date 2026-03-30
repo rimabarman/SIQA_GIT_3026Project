@@ -14,6 +14,12 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: SIQAJDBCAdapterTests
+  version: "1.0"
+  gitServerName: SIQAGitHub
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+- name: SIQACloudStreamsTests
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -31,6 +37,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_git_3026.integrations:Test_LogMessage
   packages:
   - name: SIQA_GIT_3026Project
@@ -43,6 +53,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
