@@ -8,6 +8,12 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
+  gitServerName: SIQAGitHub
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+- name: SIQAJDBCAdapterTests
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -19,12 +25,24 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqa_git_3026.integrations:Test_LogMessage
   packages:
   - name: SIQA_GIT_3026Project
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
