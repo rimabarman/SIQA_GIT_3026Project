@@ -7,8 +7,25 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+- name: DADA_GlobalVariable1
+  gitServerName: SIQAGitHub
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_3026.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDB
   packages:
   - name: SIQA_GIT_3026Project
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: project.siqa_git_3026.integrations:Test_LogMessage
+  packages:
+  - name: SIQA_GIT_3026Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
