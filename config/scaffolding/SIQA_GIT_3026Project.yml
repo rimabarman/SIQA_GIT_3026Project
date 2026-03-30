@@ -12,7 +12,3 @@ services:
   packages:
   - name: SIQA_GIT_3026Project
     version: "1.0"
-- serviceName: project.siqa_git_3026.integrations:Test_AdapterScaffolding
-  packages:
-  - name: SIQA_GIT_3026Project
-    version: "1.0"
